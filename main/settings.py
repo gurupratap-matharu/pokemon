@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    # Local 
+    # Local
     'pokemon.apps.PokemonConfig',
 ]
 
@@ -121,3 +121,5 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+POKEMON_BASE_URL = "https://pokeapi.co/api/v2/pokemon/"
