@@ -14,13 +14,13 @@
 </head>
 
 <body>
-    <div class="container bg-warning">
+    <div class="container">
         <h1 class="display-5">Pokemon finder</h1>
         <p class="text-muted">El que quiere Pokemons, que los busque.</p>
         <form class="row" action="{% url 'search_results' %}" method="GET">
             <div class="col">
                 <label for="search" class="visually-hidden">Buscar</label>
-                <input type="text" name="q" class="form-control" id="search" placeholder="Ingrese el nombre a buscar">
+                <input type="text" name="q" class="form-control" id="search" placeholder="Ingrese el nombre a buscar... eg: ditto">
             </div>
             <div class="col">
                 <button type="submit" class="btn btn-primary mb-3">Buscar</button>
