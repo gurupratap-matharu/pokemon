@@ -2,4 +2,24 @@
 
 {% block results %}
 <p class="lead">Resultados de la búsqueda</p>
+
+{% if not pokemon_list %}
+<div class="card w-25 mb-3">
+    <div class="card-body">
+        <p class="card-title">No encontramos tu pokemon :(</p>
+    </div>
+</div>
+{% endif %}
+
+{% for pokemon in pokemon_list %}
+
+<div class="card w-25 mb-3">
+    <div class="card-body">
+        <h5 class="card-title">{{ pokemon.name|title }}</h5>
+        <a href="{{ pokemon.url }}" class="card-link">View</a>
+    </div>
+</div>
+
+{% endfor %}
+
 {% endblock results %}
