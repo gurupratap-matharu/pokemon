@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container p-md-5">
         <h1 class="display-5">Pokemon finder</h1>
         <p class="text-muted">El que quiere Pokemons, que los busque.</p>
         <form class="row" action="{% url 'search_results' %}" method="GET">
@@ -27,6 +27,12 @@
             </div>
         </form>
         {% block results %}{% endblock results %}
+        
+        <hr>
+        <div class="d-flex w-50 flex-row justify-content-between">
+            <p class="align-self-stretch">Hecho por Gurupratap Matharu</p>
+            <a href="https://www.github.com/gurupratap-matharu/pokemon" target="_blank" class="btn btn-outline-primary">Link a mi repo</a>
+        </div>
     </div>
 
     <!-- Optional JavaScript; choose one of the two! -->
