@@ -15,8 +15,9 @@
 
 <div class="card w-25 mb-3">
     <div class="card-body">
-        <h5 class="card-title">{{ pokemon.name|title }}</h5>
-        <a href="{{ pokemon.url }}" class="card-link">View</a>
+        <a href="{% url 'pokemon_detail' pokemon.name %}">
+            <h5 class="card-title">{{ pokemon.name|title }}</h5>
+        </a>
     </div>
 </div>
 
